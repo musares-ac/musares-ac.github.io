@@ -234,9 +234,4 @@ footer a:hover {
   .section-title {
     font-size: 2rem;
   }
-  #quienes-somos .row,
-  #mision .row,
-  #vision .row {
-    flex-direction: column-reverse;
-  }
 }
