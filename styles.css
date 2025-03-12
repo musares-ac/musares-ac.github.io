@@ -1,0 +1,242 @@
+/* Estilos Generales */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #0B2447;
+  color: #BECEED;
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #FFFFFF;
+}
+
+/* Estilos de la Barra de Navegacion */
+.navbar {
+  color: #FFFFFF !important;
+  min-height: 80px; 
+  padding: 15px 0;
+  background-color: rgba(17, 65, 112, 0.95);
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+  color: #BECEED !important;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #820000 !important;
+}
+
+/* Estilos de la Seccion Inicio */
+.inicio {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.video-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+}
+
+.bg-dark-gradient {
+  background: linear-gradient(135deg, #0B2447 0%, #114170 100%);
+}
+
+/* Estilos de la Seccion Codigo de Etica */
+#codigo-etica {
+  background-color: #f8f9fa; 
+  padding: 60px 0;
+}
+
+#codigo-etica h3 {
+  color: #114170;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+#codigo-etica ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#codigo-etica li {
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.bg-blue {
+  background-color: #114170;
+}
+
+/* Estilos de la Seccion Destacado */
+#destacado h3 {
+  color: #114170
+}
+
+#quienes-somos img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(190, 206, 237, 0.2);
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(190, 206, 237, 0.4);
+}
+
+.card-img-top {
+  height: auto; 
+  object-fit: contain; 
+  background-color: #fff; 
+  padding: 10px; 
+}
+
+/* Estilos de la Seccion Galeria */
+.gallery-img {
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(190, 206, 237, 0.3);
+}
+
+#carouselGaleria {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#carouselGaleria .carousel-item img {
+  width: 100%;
+  height: auto;
+  max-height: 500px; 
+  object-fit: contain; 
+  border-radius: 8px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  filter: none;
+  opacity: 1; 
+}
+
+/* Estilos de la Seccion Contacto */
+#contacto .form-control {
+  transition: all 0.3s ease;
+}
+#contacto .form-control:focus {
+  transform: scale(1.02);
+  border-color: #820000;
+  box-shadow: 0 0 10px rgba(130, 0, 0, 0.5);
+}
+#contacto button:active {
+  transform: scale(0.98);
+}
+
+#contacto .form-control {
+  border-radius: 8px;
+  border: 1px solid #114170; 
+  color: #114170;
+}
+
+#contacto .form-label {
+  color: #114170; 
+  font-weight: bold;
+}
+
+#contacto .form-control:focus {
+  border-color: #114170;
+  box-shadow: 0 0 5px rgba(17, 65, 112, 0.5);
+}
+
+#contacto button {
+  background-color: #114170;
+  border: none;
+  color: #BECEED;
+}
+
+#contacto button:hover {
+  background-color: #0B2447;
+}
+
+/* Estilos de la Seccion Donaciones */
+#donaciones .btn {
+  background-color: #820000;
+  border: none;
+}
+#donaciones .btn:hover {
+  background-color: #490505;
+}
+
+/* Estilos de la Seccion Como Ayudar */
+.ayuda-section {
+  background-color: #f8f9fa;
+  padding: 60px 0;
+}
+
+.ayuda-section h3 {
+  color: #114170;
+  font-weight: bold;
+}
+
+.ayuda-section p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Estilos del Footer */
+footer {
+  background-color: #114170;
+  color: #BECEED;
+  text-align: center;
+  padding: 15px 0;
+}
+
+footer a {
+  color: #BECEED;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #820000; 
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .inicio {
+    min-height: 60vh;
+  }
+  .section-title {
+    font-size: 2rem;
+  }
+  #quienes-somos .row,
+  #mision .row,
+  #vision .row {
+    flex-direction: column-reverse;
+  }
+}
