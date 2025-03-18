@@ -62,33 +62,6 @@ body {
   background: linear-gradient(135deg, #0B2447 0%, #114170 100%);
 }
 
-/* Estilos de la Seccion Codigo de Etica */
-#codigo-etica {
-  background-color: #f8f9fa; 
-  padding: 60px 0;
-}
-
-#codigo-etica h3 {
-  color: #114170;
-  font-weight: bold;
-  margin-top: 20px;
-}
-
-#codigo-etica ul {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-#codigo-etica li {
-  margin-bottom: 10px;
-  font-size: 18px;
-  line-height: 1.5;
-}
-
-.bg-blue {
-  background-color: #114170;
-}
-
 /* Estilos de la Seccion Destacado */
 #destacado h3 {
   color: #114170
@@ -115,7 +88,21 @@ body {
   padding: 10px; 
 }
 
-/* Estilos de la Seccion Galeria */
+/* Estilos de la Seccion Actividades Culturales */
+#carouselEventos {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#carouselEventos .carousel-item img {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+/* Estilos de la Seccion Actividades Asistenciales */
 .gallery-img {
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -143,6 +130,31 @@ body {
 .carousel-control-next {
   filter: none;
   opacity: 1; 
+}
+
+/* Estilos de la Seccion Como Ayudar */
+.ayuda-section {
+  background-color: #f8f9fa;
+  padding: 60px 0;
+}
+
+.ayuda-section h3 {
+  color: #114170;
+  font-weight: bold;
+}
+
+.ayuda-section p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Estilos de la Seccion Donaciones */
+#donaciones .btn {
+  background-color: #820000;
+  border: none;
+}
+#donaciones .btn:hover {
+  background-color: #490505;
 }
 
 /* Estilos de la Seccion Contacto */
@@ -184,29 +196,31 @@ body {
   background-color: #0B2447;
 }
 
-/* Estilos de la Seccion Donaciones */
-#donaciones .btn {
-  background-color: #820000;
-  border: none;
-}
-#donaciones .btn:hover {
-  background-color: #490505;
-}
-
-/* Estilos de la Seccion Como Ayudar */
-.ayuda-section {
-  background-color: #f8f9fa;
+/* Estilos de la Seccion Codigo de Etica */
+#codigo-etica {
+  background-color: #f8f9fa; 
   padding: 60px 0;
 }
 
-.ayuda-section h3 {
+#codigo-etica h3 {
   color: #114170;
   font-weight: bold;
+  margin-top: 20px;
 }
 
-.ayuda-section p {
-  font-size: 1.1rem;
-  line-height: 1.6;
+#codigo-etica ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#codigo-etica li {
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.bg-blue {
+  background-color: #114170;
 }
 
 /* Estilos del Footer */
