@@ -168,9 +168,6 @@
           <div class="carousel-item">
             <img src="imagenes/eventos/cobijon_2025.jpg" class="d-block w-100 rounded" alt="Cobijon 2025">
           </div>
-          <div class="carousel-item">
-            <img src="imagenes/eventos/evento_cultural_3.jpg" class="d-block w-100 rounded" alt="Evento Cultural 3">
-          </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselEventos" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -182,21 +179,29 @@
     </div>
   </section>
 
-
-  <!-- Seccion Actividades Asistenciales -->
+  <!-- Sección Actividades Asistenciales -->
   <section id="galeria" class="py-5 text-white bg-dark-gradient">
     <div class="container">
       <h2 class="section-title text-center mb-5">Actividades asistenciales</h2>
       <div id="carouselGaleria" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="imagenes/eventos/concurso_de_guitarristas.jpg" class="d-block w-100 rounded">
+            <video class="w-100 rounded video-carousel" controls style="aspect-ratio: 16/9; object-fit: cover;">
+              <source src="videos/eventos/despensas_2025.mp4" type="video/mp4">
+              Tu navegador no soporta la reproducción de video.
+            </video>
           </div>
           <div class="carousel-item">
-            <img src="imagenes/eventos/cobijon_2025.jpg" class="d-block w-100 rounded">
+            <video class="w-100 rounded video-carousel" controls style="aspect-ratio: 16/9; object-fit: cover;">
+              <source src="videos/eventos/video2.mp4" type="video/mp4">
+              Tu navegador no soporta la reproducción de video.
+            </video>
           </div>
           <div class="carousel-item">
-            <img src="imagenes/eventos/evento3.jpg" class="d-block w-100 rounded">
+            <video class="w-100 rounded video-carousel" controls style="aspect-ratio: 16/9; object-fit: cover;">
+              <source src="videos/eventos/video3.mp4" type="video/mp4">
+              Tu navegador no soporta la reproducción de video.
+            </video>
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselGaleria" data-bs-slide="prev">
@@ -208,6 +213,19 @@
       </div>
     </div>
   </section>
+
+  <!-- Script para pausar el carrusel cuando un video esté en reproducción -->
+  <script>
+    document.querySelectorAll('.video-carousel').forEach(video => {
+      video.addEventListener('play', function() {
+        let carousel = document.querySelector('#carouselGaleria');
+        let bsCarousel = bootstrap.Carousel.getInstance(carousel);
+        if (bsCarousel) {
+          bsCarousel.pause(); // Detiene el carrusel si un video empieza a reproducirse
+        }
+      });
+    });
+  </script>
 
   <!-- Seccion Como Ayudar -->
   <section id="como-ayudar" class="py-5 bg-light text-dark ayuda-section">
