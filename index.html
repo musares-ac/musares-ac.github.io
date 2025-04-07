@@ -32,7 +32,7 @@
           <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
           <li class="nav-item"><a class="nav-link" href="#quienes-somos">¿Quiénes Somos?</a></li>
           <li class="nav-item"><a class="nav-link" href="#destacado">Destacado</a></li>
-          <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
+          <li class="nav-item"><a class="nav-link" href="#actividades">Actividades Culturales y Asistenciales</a></li>
           <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
           <li class="nav-item"><a class="nav-link" href="#donaciones">Donaciones</a></li>
           <li class="nav-item"><a class="nav-link" href="registros.html">Registros, claves y códigos</a></li>
@@ -68,7 +68,7 @@
           </p>
         </div>
         <div class="col-md-6 text-center">
-          <img src="imagenes/generadas/quienes-somos.webp" class="img-fluid rounded shadow">
+          <img src="imagenes/quienes-somos/quienes-somos.jpeg" class="img-fluid rounded shadow">
         </div>
       </div>
     </div>
@@ -80,7 +80,7 @@
       <h2 class="section-title text-center mb-5 text-dark">Misión</h2>
       <div class="row align-items-center">
         <div class="col-md-6 text-center order-2 order-md-1">
-          <img src="imagenes/generadas/mision.webp" class="img-fluid rounded shadow" alt="Imagen sobre nuestra misión">
+          <img src="imagenes/mision/mision.jpeg" class="img-fluid rounded shadow">
         </div>
         <div class="col-md-6 text-center order-1 order-md-2">
           <p class="fs-5">
@@ -157,16 +157,22 @@
   </section>
 
   <!-- Seccion Actividades Culturales -->
-  <section id="eventos" class="py-5 bg-blue text-white">
+  <section id="actividades" class="py-5 bg-blue text-white">
     <div class="container">
       <h2 class="section-title text-center mb-5">Actividades Culturales</h2>
       <div id="carouselEventos" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="imagenes/eventos/concurso_de_guitarristas.jpg" class="d-block w-100 rounded" alt="Concurso de Guitarristas">
+            <video class="rounded video-carousel" controls style="aspect-ratio: 16/9; object-fit: cover;">
+              <source src="videos/actividades-culturales/actividades-culturales.mp4" type="video/mp4">
+              Tu navegador no soporta la reproducción de video.
+            </video>
           </div>
           <div class="carousel-item">
-            <img src="imagenes/eventos/cobijon_2025.jpg" class="d-block w-100 rounded" alt="Cobijon 2025">
+            <video class="rounded video-carousel" controls style="aspect-ratio: 16/9; object-fit: cover;">
+              <source src="videos/actividades-culturales/ponencia-musico-a-marca.mp4" type="video/mp4">
+              Tu navegador no soporta la reproducción de video.
+            </video>
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselEventos" data-bs-slide="prev">
@@ -180,21 +186,22 @@
   </section>
 
   <!-- Sección Actividades Asistenciales -->
-  <section id="galeria" class="py-5 text-white bg-dark-gradient">
+  <section class="py-5 text-white bg-dark-gradient">
     <div class="container">
       <h2 class="section-title text-center mb-5">Actividades asistenciales</h2>
       <div id="carouselGaleria" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <video class="w-100 rounded video-carousel" controls style="aspect-ratio: 16/9; object-fit: cover;">
+            <video class="rounded video-carousel" controls style="aspect-ratio: 16/9; object-fit: cover;">
               <source src="videos/eventos/despensas_2025.mp4" type="video/mp4">
               Tu navegador no soporta la reproducción de video.
             </video>
           </div>
           <div class="carousel-item">
-            <div class="ratio ratio-16x9">
-              <iframe src="videos/eventos/cobijon_2025.mp4" title="Video Destacado" allowfullscreen></iframe>
-            </div>
+            <video class="rounded video-carousel" controls style="aspect-ratio: 16/9; object-fit: cover;">
+              <source src="videos/actividades-asistenciales/taller-salud-mental.mp4" type="video/mp4">
+              Tu navegador no soporta la reproducción de video.
+            </video>
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselGaleria" data-bs-slide="prev">
@@ -214,7 +221,8 @@
         let carousel = document.querySelector('#carouselGaleria');
         let bsCarousel = bootstrap.Carousel.getInstance(carousel);
         if (bsCarousel) {
-          bsCarousel.pause(); // Detiene el carrusel si un video empieza a reproducirse
+          // Detiene el carrusel si un video empieza a reproducirse
+          bsCarousel.pause();
         }
       });
     });
