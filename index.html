@@ -31,7 +31,6 @@
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
           <li class="nav-item"><a class="nav-link" href="#quienes-somos">¿Quiénes Somos?</a></li>
-          <li class="nav-item"><a class="nav-link" href="#destacado">Destacado</a></li>
           <li class="nav-item"><a class="nav-link" href="#actividades">Actividades Culturales y Asistenciales</a></li>
           <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
           <li class="nav-item"><a class="nav-link" href="#donaciones">Donaciones</a></li>
@@ -144,8 +143,7 @@
     </div>
   </section>
   
-
-  <!-- Seccion Destacado -->
+  <!-- Seccion Destacado
   <section id="destacado" class="py-5 bg-blue text-white">
     <div class="container text-center">
       <h2 class="section-title mb-5">Destacado</h2>
@@ -154,79 +152,73 @@
         <iframe src="videos/eventos/despensas_2025.mp4" title="Video Destacado" allowfullscreen></iframe>
       </div>
     </div>
-  </section>
+  </section>-->
 
   <!-- Seccion Actividades Culturales -->
-  <section id="actividades" class="py-5 bg-blue text-white">
+  <section id="actividades-culturales" class="py-5 bg-dark-gradient">
     <div class="container">
-      <h2 class="section-title text-center mb-5">Actividades Culturales</h2>
-      <div id="carouselEventos" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <video class="rounded video-carousel" controls style="aspect-ratio: 16/9; object-fit: cover;">
+      <h2 class="section-title text-center mb-4">Actividades Culturales</h2>
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <div class="card h-100">
+            <video class="card-img-top" controls>
               <source src="videos/actividades-culturales/actividades-culturales.mp4" type="video/mp4">
-              Tu navegador no soporta la reproducción de video.
+              Tu navegador no soporta el video.
             </video>
-          </div>
-          <div class="carousel-item">
-            <video class="rounded video-carousel" controls style="aspect-ratio: 16/9; object-fit: cover;">
-              <source src="videos/actividades-culturales/ponencia-musico-a-marca.mp4" type="video/mp4">
-              Tu navegador no soporta la reproducción de video.
-            </video>
+            <div class="card-body">
+              <h5 class="card-title">Arte y Cultura</h5>
+              <p class="card-text">Descubre las actividades que realizamos para fomentar el arte y la cultura en la sociedad.</p>
+            </div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselEventos" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselEventos" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        </button>
+        <div class="col-md-6 mb-4">
+          <div class="card h-100">
+            <video class="card-img-top" controls>
+              <source src="videos/actividades-culturales/ponencia-musico-a-marca.mp4" type="video/mp4">
+              Tu navegador no soporta el video.
+            </video>
+            <div class="card-body">
+              <h5 class="card-title">Ponencia Magistral "De Músico a Marca"</h5>
+              <p class="card-text">No te pierdas de esta gran ponencia el próximo 14 de Noviembre.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Sección Actividades Asistenciales -->
-  <section class="py-5 text-white bg-dark-gradient">
+  <section id="actividades-asistenciales" class="py-5">
     <div class="container">
-      <h2 class="section-title text-center mb-5">Actividades asistenciales</h2>
-      <div id="carouselGaleria" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <video class="rounded video-carousel" controls style="aspect-ratio: 16/9; object-fit: cover;">
-              <source src="videos/eventos/despensas_2025.mp4" type="video/mp4">
-              Tu navegador no soporta la reproducción de video.
-            </video>
-          </div>
-          <div class="carousel-item">
-            <video class="rounded video-carousel" controls style="aspect-ratio: 16/9; object-fit: cover;">
+      <h2 class="section-title text-center mb-4">Actividades Asistenciales</h2>
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <div class="card h-100">
+            <video class="card-img-top" controls>
               <source src="videos/actividades-asistenciales/taller-salud-mental.mp4" type="video/mp4">
-              Tu navegador no soporta la reproducción de video.
+              Tu navegador no soporta el video.
             </video>
+            <div class="card-body">
+              <h5 class="card-title">Taller de salud mental</h5>
+              <p class="card-text">Taller de salud mental enfocado en el bienestar de la sociedad así como de músicos y artistas.</p>
+            </div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselGaleria" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselGaleria" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        </button>
+        <!--<div class="col-md-6 mb-4">
+          <div class="card h-100">
+            <video class="card-img-top" controls>
+              <source src="videos/asistencial2.mp4" type="video/mp4">
+              Tu navegador no soporta el video.
+            </video>
+            <div class="card-body">
+              <h5 class="card-title">Entrega de Despensas</h5>
+              <p class="card-text">Resumen de la entrega de apoyo alimentario a familias vulnerables.</p>
+            </div>
+          </div>
+        </div>-->
       </div>
     </div>
-  </section>
-
-  <!-- Script para pausar el carrusel cuando un video esté en reproducción -->
-  <script>
-    document.querySelectorAll('.video-carousel').forEach(video => {
-      video.addEventListener('play', function() {
-        let carousel = document.querySelector('#carouselGaleria');
-        let bsCarousel = bootstrap.Carousel.getInstance(carousel);
-        if (bsCarousel) {
-          // Detiene el carrusel si un video empieza a reproducirse
-          bsCarousel.pause();
-        }
-      });
-    });
-  </script>
+  </section>  
 
   <!-- Seccion Como Ayudar -->
   <section id="como-ayudar" class="py-5 bg-light text-dark ayuda-section">
