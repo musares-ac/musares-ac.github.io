@@ -132,6 +132,14 @@ body {
   opacity: 1; 
 }
 
+/* Estilo base para las imagenes del carrusel */
+.carrusel-img {
+  display: block;
+  max-height: 500px;
+  margin: 0 auto;
+  width: auto;
+}
+
 /* Estilos de la Seccion Como Ayudar */
 .ayuda-section {
   background-color: #f8f9fa;
@@ -247,5 +255,20 @@ footer a:hover {
   }
   .section-title {
     font-size: 2rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .carrusel-img {
+    max-height: 500px;
+    width: auto;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .carrusel-img {
+    width: 100%;
+    height: auto;
   }
 }
